@@ -1,0 +1,24 @@
+h1 {
+    margin: 100px;
+    border: #962410;
+    border-style: dotted;
+    border-width: 5px;
+}
+h2{
+    border: 3px #000000 solid;
+}
+
+#p1{
+    color:red;
+}
+#p2{
+    color:orange;
+}
+#p3{
+    color: #354e76;
+    font-size: 1.5em;
+}
+.odd{
+    color:green;
+    font-family: "Bell MT";
+}

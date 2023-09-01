@@ -1,0 +1,56 @@
+body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#border1{
+    width: 10000px;
+    height: 25px;
+    background-color: hsl(188, 100%, 63%);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+#border2{
+    width: 100px;
+    height: 100px;
+    background-color: hsl(0, 100%, 63%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+body{
+    margin: 0px;
+}
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    text-align: center;
+}
+#box1{
+    background-color: hsl(0, 100%, 60%);
+}
+#box2{
+    background-color: hsl(189, 100%, 55%);
+    margin: 100px;
+}
+#duckoo {
+    float: left;
+    margin: 50px;
+}
+
+.box{
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid;
+    padding: 25px;
+    height: auto;
+    width: 70%;
+    text-align: center;
+}

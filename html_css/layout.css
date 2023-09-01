@@ -1,0 +1,166 @@
+/*apply to all elements*/
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: grey;
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar {
+    background-color: black;
+    height: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+.gallery {
+    display: inline-block;
+    border: 3px solid grey;
+}
+.gallery:hover{
+    display: inline-block;
+    border: 3px solid black;
+}
+
+.gallery img {
+    height: auto;
+}
+
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    clear: both;
+    background-color: grey;
+    text-align: center;
+    padding: 25px;
+}
+
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.fa-solid.fa-house.fa-5x{
+    color: hsl(0, 0%, 66%);
+}
+.fa-solid.fa-house.fa-5x:hover{
+    color: hsl(0, 0%, 76%);
+}
+.fa-brands.fa-twitter.fa-5x{
+    color: hsl(188, 100%, 50%);
+}
+.fa-brands.fa-twitter.fa-5x:hover{
+    color: hsl(188, 100%, 60%);
+}
+.fa-brands.fa-youtube.fa-5x{
+    color: hsl(0, 100%, 50%);
+}
+.fa-brands.fa-youtube.fa-5x:hover{
+    color: hsl(0, 100%, 60%);
+}
+.fa-brands.fa-tiktok.fa-5x{
+    color: hsl(0, 0%, 10%);
+}
+.fa-brands.fa-tiktok.fa-5x:hover{
+    color: hsl(0, 0%, 30%);
+}
+
+/*responsive css*/
+@media screen and (max-width: 600px) {
+    aside, section, article {
+        width: 100%;
+    }
+}
+
+.container{
+    display: flex;
+    height: 50vh;
+    border: 10px solid black;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1{
+    background-color: hsl(0, 100%, 70%);
+}
+#box2{
+    background-color: hsl(52, 100%, 70%);
+}
+#box3{
+    background-color: hsl(111, 100%, 70%);
+}
+#box4{
+    background-color: hsl(201, 100%, 70%);
+}
+
+.square{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 13em;
+    text-align: center;
+    transform: translate(50px, 50px) rotate(45deg);
+
+    /*
+	transform: translateX(50px);
+	transform: translateY(50px);
+	transform: translate(50px, 50px);
+	transform: rotateX(180deg);
+	transform: rotateY(180deg);
+	transform: rotateZ(180deg);
+	transform: scaleX(2);
+	transform: scaleY(2);
+	transform: scale(2, 0.5);
+	transform: skewX(45deg);
+	transform: skewY(45deg);
+	transform: skew(20deg, 20deg);
+    */
+}
+#square1{
+    background:hsl(154, 100%, 69%);
+}
+#square2{
+    background:hsl(0, 100%, 69%);
+}
+#square3{
+    background:hsl(222, 100%, 69%);
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Index File</title>
+	<link rel="icon" type="images/png" href="images/favicons.png">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<h2>Headings</h2>
+	<h1>This is a h1</h1>
+	<h2>This is a h2</h2>
+	<h3>This is a h1</h3>
+	<hr>
+
+	<h2>Anchors</h2>
+	<a href="https://github.com/leexizhe"
+	   target="_blank" title="leexizhe">
+		github
+	</a>
+	<br>
+	<a href="lyrics.html">
+		My favourite song
+	</a>
+	<br>
+	<a href="mailto:leexizhe17@gmail.com">
+		Email
+	</a>
+	<hr>
+
+	<h2>Sound</h2>
+	<audio controls>
+		<source src="music/rock-cinematic.mp3">
+	</audio>
+	<hr>
+
+	<h2>Text Formatting</h2>
+	<p>This is normal text</p>
+	<p>This is <b>bold</b> text</p>
+	<p>This is <i>italic</i> text</p>
+	<p>This is <u>underlined</u> text</p>
+	<p>This is
+		<del>deleted</del>
+		text
+	</p>
+	<p>This is <small>small</small> text</p>
+	<p>This is <sub>subscript</sub> text</p>
+	<p>This is <sup>superscript</sup> text</p>
+	<p>This is
+		<mark style="background-color:lightgreen">marked</mark>
+		text
+	</p>
+	<hr>
+
+	<h2>Span & Div</h2>
+	<!--<span> is used for inline styling of small portions of text-->
+	<!--<div> is used to create block-level containers for grouping and structuring content on a web page.-->
+	<h1><span style="background-color:tomato;">This is a span title</span></h1>
+	<h1>
+		<div style="background-color:cyan;">This is a div title</div>
+	</h1>
+	<hr>
+
+	<h2>List</h2>
+	<h3>Unordered List</h3>
+	<ul>
+		<li>steam</li>
+		<li>ice</li>
+		<li>water</li>
+		<ul>
+			<li>H<sup>2</sup>o</li>
+		</ul>
+	</ul>
+	<h3>Ordered List</h3>
+	<ol>
+		<li>Wake up</li>
+		<li>Check time</li>
+		<li>
+			<mark>Go back to sleep</mark>
+		</li>
+	</ol>
+	<h3>Description List</h3>
+	<dl style="background-color:lightgreen; border:2px solid">
+		<dt>!DOCTYPE html:</dt>
+		<dd>Document type declaration.</dd>
+		<dt>html:</dt>
+		<dd>The root element.</dd>
+		<dt>head:</dt>
+		<dd>Contains metadata about the document.</dd>
+		<dt>meta:</dt>
+		<dd>Provides document metadata.</dd>
+		<dt>link:</dt>
+		<dd>Links external resources like stylesheets.</dd>
+		<dt>script:</dt>
+		<dd>Embeds or links to JavaScript code.</dd>
+		<dt>body:</dt>
+		<dd>Contains the visible content of the web page.</dd>
+		<dt>h1, h2, h3, h4, h5, h6:</dt>
+		<dd>Headings of different levels.</dd>
+		<dt>p:</dt>
+		<dd>Represents a paragraph of text.</dd>
+		<dt>a:</dt>
+		<dd>Creates hyperlinks to other web pages or resources.</dd>
+		<dt>img:</dt>
+		<dd>Embeds images in the web page.</dd>
+		<dt>ul and li:</dt>
+		<dd>Used to create unordered (bulleted) lists.</dd>
+		<dt>ol and li:</dt>
+		<dd>Used to create ordered (numbered) lists.</dd>
+		<dt>div:</dt>
+		<dd>A generic container for grouping and styling elements.</dd>
+		<dt>span:</dt>
+		<dd>A generic inline container for styling portions of text or elements.</dd>
+		<dt>br:</dt>
+		<dd>Inserts a line break within text.</dd>
+	</dl>
+	<hr>
+
+	<h2>Table</h2>
+	<table>
+		<tr>
+			<th>Sunday</th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+		</tr>
+		<tr>
+			<td>Closed</td>
+			<td>9-5</td>
+			<td>9-5</td>
+			<td>9-5</td>
+			<td>9-5</td>
+			<td>9-5</td>
+			<td>10-2</td>
+		</tr>
+	</table>
+	<hr>
+
+	<h2>Button</h2>
+	<button onclick="doSomething()" style="font-size:25px; background-color:grey; color:lightblue; border-radius:25px;">
+		click me
+	</button>
+	<p id="greeting">Hello</p>
+	<script>
+		function doSomething() {
+			document.getElementById("greeting").innerHTML = "Goodbye";
+		}
+	</script>
+	<hr>
+
+	<h2>Form</h2>
+	<form action="lyrics.html" method="POST">
+		<label for="username">username:</label>
+		<input type="text" id="username" placeholder="Spongebob" minlength="6" maxlength="15" required><br>
+
+		<label for="password"></label>
+		<input type="password" id="password"><br>
+
+		<label for="email">email:</label>
+		<input type="email" id="email" placeholder="SSquarepants@gmail.com"><br>
+
+		<label for="phone">phone #:</label>
+		<input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+		<label for="bday">birthdate:</label>
+		<input type="date" id="bday"><br>
+
+		<label for="quantity">quantity:</label>
+		<input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+		<label>
+			<input type="radio" name="gender" value="male">
+			Male
+		</label><br>
+
+		<label>
+			<input type="radio" name="gender" value="female">
+			Female
+		</label><br>
+
+		<label>
+			<input type="radio" name="gender" value="other">
+			Other
+		</label><br>
+
+		<label for="payment">payment</label>
+		<select id="payment">
+			<option value="visa">visa</option>
+			<option value="mastercard">mastercard</option>
+			<option value="giftcard">giftcard</option>
+		</select><br>
+
+		<label for="subscribe">subscribe:</label>
+		<input type="checkbox" id="subscribe"><br>
+
+		<label for="comment">comment:</label>
+		<textarea id="comment" rows="3" cols="25"></textarea><br>
+
+		<label for="file">file:</label>
+		<input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+		<input type="reset"><br>
+		<input type="submit">
+
+
+	</form>
+
+</body>
+</html>

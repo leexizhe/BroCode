@@ -1,0 +1,51 @@
+li:hover {
+    background-color: chocolate;
+}
+li:not(hover) {
+    background-color: #a1d2ab;
+}
+
+
+a:link{
+    color: gold;
+}
+
+a:hover{
+    color: grey;
+    font-size: 1.1em;
+}
+
+a:active{
+    color: cyan;
+    font-size: 1.1em;
+}
+
+a:visited{
+    color: grey;
+}
+
+h1::first-letter {
+    font-size: 2em;
+    font-style: italic;
+}
+
+p::first-line{
+    background-color: yellow;
+}
+
+p::selection {
+    background-color: green;
+}
+
+#apple::after {
+    content: "🍎";
+}
+
+#banana::after {
+    content: "🍌";
+}
+
+#fruits li::marker {
+    content: "✔";
+    color: red;
+}
