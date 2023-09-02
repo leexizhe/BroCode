@@ -2,19 +2,19 @@
 
 let username;
 
-document.getElementById("nameButton").onclick = function(){
+document.getElementById("nameButton").onclick = function () {
 
     username = document.getElementById("name").value;
-    window.alert("hello "+ username);
+    window.alert("hello " + username);
 }
 
 /*Type conversion in JavaScript*/
 let age;
 
-document.getElementById("ageButton").onclick = function(){
+document.getElementById("ageButton").onclick = function () {
 
     age = document.getElementById("age").value;
-    age = Number(age)+ 1;
+    age = Number(age) + 1;
     console.log("your age is ", age);
 }
 
@@ -23,12 +23,12 @@ let a;
 let b;
 let c;
 
-document.getElementById("calculatorButton").onclick = function(){
+document.getElementById("calculatorButton").onclick = function () {
 
     a = document.getElementById("aText").value;
     b = document.getElementById("bText").value;
 
-    c = Math.sqrt(Math.pow(Number(a),2)+Math.pow(Number(b),2))
+    c = Math.sqrt(Math.pow(Number(a), 2) + Math.pow(Number(b), 2))
 
     document.getElementById("cLabel").innerHTML = "Side C: " + c;
 }
@@ -49,4 +49,21 @@ document.getElementById("increase").onclick = function () {
 document.getElementById("reset").onclick = function () {
     count = 0;
     document.getElementById("countLabel").innerHTML = count;
+};
+
+/*JavaScript checked property*/
+document.getElementById("checkedButton").onclick = function () {
+    const myCheckBox = document.getElementById("myCheckedBox");
+    const dota = document.getElementById("dotaBtn");
+    const lol = document.getElementById("lolBtn");
+
+    if (myCheckBox.checked && dota.checked) {
+        window.alert("You are Dota gamer!");
+    } else if (myCheckBox.checked && lol.checked) {
+        window.alert("You are LoL gamer!");
+    } else if (myCheckBox.checked) {
+        window.alert("You are normal gamer!");
+    } else {
+        window.alert("LOSER!");
+    }
 };
