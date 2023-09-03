@@ -67,3 +67,21 @@ document.getElementById("checkedButton").onclick = function () {
         window.alert("LOSER!");
     }
 };
+
+/*Javascript template literals*/
+// Template literals = delimited with (`)
+// instead of double or single quotes
+// allows embedded variables and expressions
+document.getElementById("birthdayButton").onclick = function () {
+    let nameBirthday = document.getElementById("nameBirthday").value;
+    let ageBirthday = document.getElementById("ageBirthday").value;
+
+    let song =
+        `Happy birthday to you!<br>
+        Happy birthday to you!<br>
+        Happy birthday dear, ${nameBirthday}<br>
+        Happy birthday to you!<br>
+        You are, ${ageBirthday},years old!<br>`;
+
+    document.getElementById("song").innerHTML = song;
+};

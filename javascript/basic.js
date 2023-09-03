@@ -1,8 +1,8 @@
 /*Useful string methods in JavaScript*/
+console.log("BroCode - Useful string methods in JavaScript");
 let userName = "Bro Code   ";
 let phoneNumber = "123-456-7890";
 
-console.log("Useful string methods in JavaScript");
 console.log("length:", userName.length);
 console.log(userName.charAt(0));
 console.log("first o:", userName.indexOf("o"));
@@ -18,7 +18,7 @@ phoneNumber = phoneNumber.replaceAll("-", "");
 console.log(phoneNumber);
 
 /*String slicing in JavaScript*/
-console.log("String slicing in JavaScript");
+console.log("BroCode - String slicing in JavaScript");
 let fullName = "Snoop Dogg";
 let firstName;
 let lastName;
