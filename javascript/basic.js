@@ -17,6 +17,7 @@ console.log("lowercase:", userName);
 phoneNumber = phoneNumber.replaceAll("-", "");
 console.log(phoneNumber);
 
+
 /*String slicing in JavaScript*/
 console.log("BroCode - String slicing in JavaScript");
 let fullName = "Snoop Dogg";
@@ -28,6 +29,7 @@ lastName = fullName.slice(fullName.indexOf(" ") + 1);
 console.log(firstName);
 
 console.log(lastName);
+
 
 /*JavaScript function expressions*/
 // function expression = function without a name (anonymous function) avoid polluting the global scope with names write it, then forget about it
@@ -49,11 +51,38 @@ document.getElementById("decreaseButton").onclick = function () {
     document.getElementById("myLabel").innerHTML = count;
 }
 
+
 /*JavaScript arrow function expressions*/
+// arrow function expression = compact alternative to a traditional function expression
 console.log("BroCode - JavaScript arrow function expressions");
 const hello = (userName) => console.log(`Hello ${userName}`)
-
 hello("world");
 
 const percent = (x, y) => x / y * 100;
-console.log(`${percent(1, 10)}%`)
+
+console.log(`${percent(1, 10)}%`);
+
+
+/*JavaScript maps*/
+console.log("BroCode - JavaScript maps");
+// Map = object that holds key-value pairs of any data type
+const store = new Map([
+    ["t-shirt", 20],
+    ["jeans", 30],
+    ["socks", 10],
+    ["underwear", 50]
+]);
+
+console.log(store.get("t-shirt"));
+
+store.set("hat", 40);
+
+console.log(store.get("hat"));
+store.delete("hat");
+
+console.log(store.get("hat"));
+console.log(store.has("underwear"));
+
+console.log(store.size);
+
+store.forEach((value, key) => console.log(`${key} $${value}`));
