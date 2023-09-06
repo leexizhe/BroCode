@@ -77,25 +77,88 @@ myList.insertBefore(listItem, myList.getElementsByTagName("li")[1]);
 console.log("BroCode - JavaScript events");
 const button = document.getElementById("myButton");
 button.onclick = doSomething;
-
-
 const loading = document.body;
+
+
 loading.onload = doSomething;
-
-
 const box = document.getElementById("myDiv");
+
+
 box.onmouseover = changeRed;
 box.onmouseout  = changeBlue;
 // box.onmousedown = changeRed;
 // box.onmouseup = changeBlue;
-
 function doSomething(){
+
     alert("You did something!");
 }
-
 function changeRed() {
+
     box.style.backgroundColor = "red";
 }
 function changeBlue() {
     box.style.backgroundColor = "blue";
+}
+
+
+/*JavaScript addEventListener()*/
+console.log("BroCode - JavaScript addEventListener()");
+// .addEventListener(event, function, useCapture) You can add many event handlers
+// to one element. Even the same event that invokes different functions
+const innerDiv = document.getElementById("innerDiv");
+const outerDiv = document.getElementById("outerDiv");
+
+innerDiv.addEventListener("click", changeGreen);
+outerDiv.addEventListener("click", changeGreen, true);
+
+function changeGreen(){
+    alert(`You selected ${this.id}`);
+    this.style.backgroundColor = "lightgreen"
+}
+
+
+/*JavaScript show/hide HTML elements*/
+console.log("BroCode - JavaScript show/hide HTML elements");
+const toggle = document.querySelector("#toggle");
+const duckoo = document.querySelector("#duckoo");
+toggle.addEventListener("click", () => {
+
+    if(duckoo.style.visibility == "visible"){
+        duckoo.style.visibility = "hidden";
+    }
+    else{
+        duckoo.style.visibility = "visible";
+    }
+})
+
+
+/*JavaScript detect key presses*/
+console.log("BroCode - JavaScript detect key presses");
+const move = document.getElementById("move");
+window.addEventListener("keydown", moving);
+let x = 0;
+let y = 0;
+
+function moving(event){
+
+    switch(event.key){
+        case "ArrowDown":
+            y+=5;
+            move.style.top = y + "px";
+            break;
+        case "ArrowUp":
+            y-=5;
+            move.style.top = y + "px";
+            break;
+        case "ArrowRight":
+            x+=5;
+            move.style.left = x + "px";
+            break;
+        case "ArrowLeft":
+            x-=5;
+            move.style.left = x + "px";
+            break;
+        default:
+            break;
+    }
 }
