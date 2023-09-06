@@ -20,7 +20,7 @@ console.log(phoneNumber);
 
 /*String slicing in JavaScript*/
 console.log("BroCode - String slicing in JavaScript");
-let fullName = "Snoop Dogg";
+let fullName = "Snoop Dog";
 let firstName;
 let lastName;
 firstName = fullName.slice(0, fullName.indexOf(" "));

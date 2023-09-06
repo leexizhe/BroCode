@@ -20,3 +20,15 @@ console.log("Enrolled:", student);
 document.getElementById("p1").innerHTML = "Hello " + firstName;
 document.getElementById("p2").innerHTML = "You are " + age + " years old";
 document.getElementById("p3").innerHTML = "Enrolled: " + student;
+
+
+/*JavaScript ES6 Modules*/
+import * as MathUtil from "./MathUtil.js";
+
+console.log(MathUtil.PI);
+
+let circumference = MathUtil.getCircumference(10);
+console.log(circumference);
+
+let area = MathUtil.getArea(10);
+console.log(area);
