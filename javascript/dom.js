@@ -7,7 +7,7 @@ console.log(document.URL);
 document.title = "Bro Code is the best!"
 
 console.log(document.title);
-document.body.style.backgroundColor="lightgrey"
+document.body.style.backgroundColor = "lightgrey"
 
 
 /*JavaScript element selectors*/
@@ -16,7 +16,7 @@ let fruits = document.getElementsByName("fruits");
 
 console.log(fruits[0].value);
 fruits.forEach(fruit => {
-    if(fruit.checked){
+    if (fruit.checked) {
         console.log(fruit.value);
     }
 })
@@ -85,17 +85,19 @@ const box = document.getElementById("myDiv");
 
 
 box.onmouseover = changeRed;
-box.onmouseout  = changeBlue;
+box.onmouseout = changeBlue;
 // box.onmousedown = changeRed;
 // box.onmouseup = changeBlue;
-function doSomething(){
+function doSomething() {
 
     alert("You did something!");
 }
+
 function changeRed() {
 
     box.style.backgroundColor = "red";
 }
+
 function changeBlue() {
     box.style.backgroundColor = "blue";
 }
@@ -111,7 +113,7 @@ const outerDiv = document.getElementById("outerDiv");
 innerDiv.addEventListener("click", changeGreen);
 outerDiv.addEventListener("click", changeGreen, true);
 
-function changeGreen(){
+function changeGreen() {
     alert(`You selected ${this.id}`);
     this.style.backgroundColor = "lightgreen"
 }
@@ -123,10 +125,9 @@ const toggle = document.querySelector("#toggle");
 const duckoo = document.querySelector("#duckoo");
 toggle.addEventListener("click", () => {
 
-    if(duckoo.style.visibility == "visible"){
+    if (duckoo.style.visibility == "visible") {
         duckoo.style.visibility = "hidden";
-    }
-    else{
+    } else {
         duckoo.style.visibility = "visible";
     }
 })
@@ -139,26 +140,58 @@ window.addEventListener("keydown", moving);
 let x = 0;
 let y = 0;
 
-function moving(event){
+function moving(event) {
 
-    switch(event.key){
+    switch (event.key) {
         case "ArrowDown":
-            y+=5;
+            y += 5;
             move.style.top = y + "px";
             break;
         case "ArrowUp":
-            y-=5;
+            y -= 5;
             move.style.top = y + "px";
             break;
         case "ArrowRight":
-            x+=5;
+            x += 5;
             move.style.left = x + "px";
             break;
         case "ArrowLeft":
-            x-=5;
+            x -= 5;
             move.style.left = x + "px";
             break;
         default:
             break;
+    }
+
+}
+
+
+/*JavaScript animations*/
+console.log("BroCode - JavaScript animations");
+const animationBtn = document.getElementById("animationBtn");
+const animation = document.getElementById("animation");
+
+
+animationBtn.addEventListener("click", rotate);
+
+function rotate() {
+    let timerId = null;
+    let degrees = 0;
+    let x = 0;
+    let y = 0;
+
+    timerId = setInterval(frame, 5);
+
+    function frame() {
+        if (y >= 2000) {
+            clearInterval(timerId);
+        } else {
+            x += 2;
+            y += 2;
+            degrees += 5;
+            animation.style.left = x + "px";
+            animation.style.bottom = y + "px";
+            animation.style.transform = "rotateZ(" + degrees + "deg)";
+        }
     }
 }

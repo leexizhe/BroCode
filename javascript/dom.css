@@ -22,3 +22,10 @@
     border: 1px solid;
     position: relative;
 }
+
+#animation{
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
