@@ -20,8 +20,8 @@ public class Deserializer {
 
             long serialVersionUID = ObjectStreamClass.lookup(user.getClass()).getSerialVersionUID();
             System.out.println("serialVersionUID: " + serialVersionUID);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (IOException | ClassNotFoundException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
