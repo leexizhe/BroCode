@@ -9,7 +9,6 @@ public class ExceptionHandling {
         // exception = 	an event that occurs during the execution of a program that,
         //				disrupts the normal flow of instructions
 
-
         Scanner scanner = new Scanner(System.in);
         try {
 
