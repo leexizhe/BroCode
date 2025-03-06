@@ -1,10 +1,10 @@
 package data_structure;
 
-public class DynamicArrays {
+public class Data5DynamicArrays {
 
     public static void main(String[] args) {
 
-        DynamicArrays arrays = new DynamicArrays(2);
+        Data5DynamicArrays arrays = new Data5DynamicArrays(2);
         System.out.println("isEmpty : " + arrays.isEmpty());
         System.out.println("capacity : " + arrays.capacity);
         arrays.add("A");
@@ -36,11 +36,11 @@ public class DynamicArrays {
     int capacity = 10;
     Object[] array;
 
-    public DynamicArrays() {
+    public Data5DynamicArrays() {
         this.array = new Object[capacity];
     }
 
-    public DynamicArrays(int capacity) {
+    public Data5DynamicArrays(int capacity) {
         this.capacity = capacity;
         this.array = new Object[capacity];
     }

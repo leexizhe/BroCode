@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.Stack;
 
-public class DataStack {
+public class Data1Stack {
     /*
     stack = LIFO data structure. Last-In First-Out
     stores objects into a sort of "vertical tower"

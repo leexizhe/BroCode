@@ -3,7 +3,7 @@ package data_structure;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class DataQueue {
+public class Data2Queue {
     /*
     Queue = FIFO data structure. First-In First-Out
     			A collection designed for holding elements prior to processing

@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class DataPriorityQueue {
+public class Data3PriorityQueue {
     /*
     Priority Queue = A FIFO data structure that serves elements
     with the highest priorities first

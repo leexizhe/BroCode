@@ -2,7 +2,7 @@ package data_structure;
 
 import java.util.LinkedList;
 
-public class DataLinkedList {
+public class Data4LinkedList {
     /*
     LinkedList =  Nodes are in 2 parts (data + address)
     			Nodes are in non-consecutive memory locations
