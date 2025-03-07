@@ -1,7 +1,5 @@
 package algorithm;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Algo1BigO {
 
     /*
