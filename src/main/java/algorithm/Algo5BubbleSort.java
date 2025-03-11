@@ -7,6 +7,7 @@ public class Algo5BubbleSort {
     Bubble Sort is a simple comparison-based sorting algorithm. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
     The pass through the list is repeated until the list is sorted.
     Run Time Complexity: best case: 𝑂(𝑛), worst case: 𝑂(𝑛²)
+    Space Complexity: 𝑂(1) (in-place sorting).
 
     1. Small Data Sets: Bubble sort can be useful for small data sets where the simplicity of the algorithm outweighs its inefficiency.
 

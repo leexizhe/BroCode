@@ -6,6 +6,7 @@ public class Algo2LinearSearch {
     Linear Search is a simple search algorithm that checks each element in the list sequentially until the target element is found or the end of the list is reached.
     It works on both sorted and unsorted lists.
     Run Time Complexity: best case: 𝑂(1), worst case: 𝑂(𝑛)
+    Space Complexity: 𝑂(𝑛)
 
     1. Small Data Sets: Linear search is useful for small data sets where the overhead of more complex algorithms is not justified.
 

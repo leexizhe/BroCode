@@ -5,6 +5,7 @@ public class Algo3BinarySearch {
     Binary Search is a searching algorithm that efficiently finds the position of a target value within a sorted array.
     It repeatedly divides the search interval in half, comparing the target value to the middle element and narrowing down the interval until the target value is found.
     Run Time Complexity: best case: 𝑂(1), worst case: 𝑂(log 𝑛)
+    Space Complexity: 𝑂(1) (iterative) or 𝑂(log 𝑛) (recursive)
 
     1. Databases: Efficiently searching for records in sorted databases, such as finding a specific entry in a large dataset.
 

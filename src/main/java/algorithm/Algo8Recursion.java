@@ -5,6 +5,7 @@ public class Algo8Recursion {
     Recursion is a programming concept where a function calls itself to solve smaller instances of a problem, eventually reaching a base case to stop the recursion.
     It is widely used for problems that can be divided into similar sub-problems.
     Time Complexity: Depends on the problem (e.g., factorial: 𝑂(𝑛), Fibonacci (naive): 𝑂(2ⁿ))
+    Space Complexity: Depends on the depth of recursion (can lead to 𝑂(𝑛) due to the call stack).
 
     1. Divide and Conquer: Recursion is effective for problems like merge sort, quicksort, or binary search, where the problem is divided into sub-problems.
 

@@ -8,6 +8,7 @@ public class Algo7InsertionSort {
     It builds the sorted list incrementally, by taking one element at a time from the unsorted part and inserting it into its correct position in the sorted part.
     The process continues until all elements are sorted.
     Run Time Complexity: best case: 𝑂(𝑛) (nearly sorted), worst case: 𝑂(𝑛²)
+    Space Complexity: 𝑂(1) (in-place sorting)
 
     1. Small Data Sets: Insertion sort works well on small datasets where its simplicity and efficiency for such cases are advantageous.
 

@@ -4,6 +4,7 @@ public class Algo4InterpolationSearch {
     /*
     Interpolation search is a searching algorithm that applies to a sorted array. It's particularly efficient for uniformly distributed arrays.
     Run Time Complexity: best case: 𝑂(log(log𝑛)), worst case: 𝑂(𝑛)
+    Space Complexity: 𝑂(1)
 
     1. Databases: Efficient searching in sorted databases where the distribution of values is uniform, such as searching for a record in a large, sorted database.
 

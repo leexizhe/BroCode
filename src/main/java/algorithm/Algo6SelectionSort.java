@@ -9,6 +9,7 @@ public class Algo6SelectionSort {
     It repeatedly selects the smallest (or largest, depending on sorting order) element from the unsorted part of the list and moves it to the sorted part.
     The process continues until the entire list is sorted.
     Run Time Complexity: best case: 𝑂(𝑛²), worst case: 𝑂(𝑛²)
+    Space Complexity: 𝑂(1) (in-place sorting).
 
     1. Small Data Sets: Selection sort can be useful for small data sets where the overhead of more complex algorithms is not justified.
 
