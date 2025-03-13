@@ -2,24 +2,36 @@ package algorithm;
 
 public class Algo3BinarySearch {
     /*
-    Binary Search is a searching algorithm that efficiently finds the position of a target value within a sorted array.
-    It repeatedly divides the search interval in half, comparing the target value to the middle element and narrowing down the interval until the target value is found.
-    Run Time Complexity: best case: 𝑂(1), worst case: 𝑂(log 𝑛)
-    Space Complexity: 𝑂(1) (iterative) or 𝑂(log 𝑛) (recursive)
+    Binary Search is a highly efficient searching algorithm that works on sorted arrays by dividing the search interval in half.
+    Run Time Complexity:
+    - Best Case: 𝑂(1) (when the middle element is the target)
+    - Average/Worst Case: 𝑂(log 𝑛)
+    Space Complexity:
+    - Iterative: 𝑂(1)
+    - Recursive: 𝑂(log 𝑛) (due to the call stack)
 
-    1. Databases: Efficiently searching for records in sorted databases, such as finding a specific entry in a large dataset.
+    1. **Algorithm**:
+    - Compare the target value to the middle element of the array.
+    - If it matches, return the index.
+    - If it's smaller, repeat the process on the left half.
+    - If it's larger, repeat the process on the right half.
+    - Repeat until the target is found or the interval is empty.
 
-    2. File Systems: Quickly locating files or records in a sorted file system, especially useful for hierarchical file structures.
+    2. **Applications**:
+    - **Databases**: Searching for a record in a sorted database or index.
+    - **Search Engines**: Retrieving data in sorted indexes or dictionaries.
+    - **Gaming**: Quickly finding elements, like ranks or scores, in a sorted list.
+    - **Networking**: Searching for IP addresses or other sorted data tables.
+    - **Data Analysis**: Performing efficient searches in large sorted datasets.
+    - **Library Systems**: Locating books or resources in a sorted catalog.
 
-    3. Competitive Programming: Commonly used in coding competitions and interviews due to its efficiency and simplicity.
+    3. **Advantages**:
+    - Significantly faster than Linear Search for large datasets (𝑂(𝑛)).
+    - Very low memory footprint in its iterative implementation.
 
-    4. Search Algorithms: Often used as a foundational technique in other more complex search algorithms, providing a quick method for locating elements.
-
-    5. Game Development: Efficiently managing sorted game data, such as finding high scores or specific game assets.
-
-    6. Library Systems: Searching for books or materials in a sorted catalog, improving the efficiency of the retrieval process.
-
-    7. Operating Systems: Used in various system-level operations, such as memory management and process scheduling, where quick searches in sorted lists are required.
+    4. **Limitations**:
+    - Requires the array to be sorted before searching.
+    - Not suitable for dynamically updated datasets unless re-sorted frequently.
     */
 
     public static void main(String[] args) {

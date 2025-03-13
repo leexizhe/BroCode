@@ -4,16 +4,43 @@ import java.util.Stack;
 
 public class Data1Stack {
     /*
-    stack = LIFO data structure. Last-In First-Out
-    stores objects into a sort of "vertical tower"
-    push() to add objects to the top
-    pop() to remove objects from the top
+    A Stack is a linear data structure that follows the **Last In, First Out (LIFO)** principle,
+    meaning the last element added is the first to be removed. It operates much like a stack of plates in a cafeteria.
 
-    uses of stacks?
-    1. undo/redo features in text editors
-    2. moving back/forward through browser history
-    3. backtracking algorithms (maze, file directories)
-    4. calling functions (call stack)
+    1. **Key Operations**:
+    	- **Push**: Adds an element to the top of the stack.
+    	- **Pop**: Removes the top element from the stack.
+    	- **Peek/Top**: Retrieves the top element without removing it.
+    	- **isEmpty**: Checks if the stack is empty.
+
+    2. **Run Time Complexity**:
+    	- Push: 𝑂(1)
+    	- Pop: 𝑂(1)
+    	- Peek: 𝑂(1)
+
+    3. **Applications**:
+    	- **Expression Evaluation**: Used for evaluating and converting expressions (e.g., infix to postfix).
+    	- **Undo Mechanisms**: Common in text editors or IDEs to store history of actions.
+    	- **Recursion**: Manages function calls via the call stack in programming.
+    	- **Backtracking**: Helps in solving puzzles like the N-Queens problem, mazes, or the Tower of Hanoi.
+    	- **Browser Navigation**: Tracks visited pages to implement "back" functionality.
+    	- **Parsing**: Assists in parsing language syntax in compilers and interpreters.
+
+    4. **Advantages**:
+    	- Simple and efficient for its intended operations.
+    	- Useful for temporary storage during processing.
+
+    5. **Limitations**:
+    	- Limited access to elements (only the top element can be accessed).
+    	- Memory limitations in implementations using arrays, unless dynamic allocation is used.
+
+    6. **Implementation**:
+    	- Can be implemented using arrays or linked lists.
+    	- In Java, the `Stack` class in `java.util` package is often used.
+    	Example:
+    	Stack<Integer> stack = new Stack<>();
+    	stack.push(10);  // Add an element
+    	stack.pop();     // Remove the top element
     */
 
     public static void main(String[] args) {

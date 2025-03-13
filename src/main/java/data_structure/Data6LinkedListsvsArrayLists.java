@@ -8,36 +8,32 @@ public class Data6LinkedListsvsArrayLists {
     public static void main(String[] args) {
 
         /*
-        LinkedList: Better suited for scenarios with frequent insertions and deletions at the beginning or middle, and when implementing deque operations.
-        ArrayList: Better suited for scenarios requiring fast random access and less frequent modifications.
-        */
+        1. **Structure**:
+        	- LinkedList: Uses a doubly linked list structure; each node points to its previous and next node.
+        	- ArrayList: Uses a dynamic array structure; elements are stored contiguously.
 
-        /*
-        Comparison of ArrayList and LinkedList Operations
+        2. **Performance**:
+        	- Adding/Removing:
+        		* LinkedList: Efficient for frequent insertions/removals at the beginning or middle (𝑂(1) when at a node, otherwise 𝑂(𝑛)).
+        		* ArrayList: Inserting/removing elements at the end is efficient (𝑂(1)), but costly elsewhere (𝑂(𝑛)).
+        	- Access:
+        		* LinkedList: Slow (𝑂(𝑛)) as you must traverse nodes sequentially.
+        		* ArrayList: Fast (𝑂(1)) as it uses direct index-based access.
 
-        1. Access (get):
-        - ArrayList: O(1)
-        - LinkedList: O(n)
+        3. **Memory Usage**:
+        	- LinkedList: More memory-intensive due to storage of pointers for previous/next nodes.
+        	- ArrayList: Uses less memory as it doesn’t have pointers.
 
-        2. Insertions/Deletions (beginning):
-        - ArrayList: O(n)
-        - LinkedList: O(1)
+        4. **Iteration**:
+        	- LinkedList: Better performance for iterative operations like adding/removing elements during iteration (using ListIterator).
+        	- ArrayList: Performs well with simple traversal and random access.
 
-        3. Insertions/Deletions (middle):
-        - ArrayList: O(n)
-        - LinkedList: O(n) (but efficient pointer manipulation)
+        5. **Use Cases**:
+        	- LinkedList: Suitable for scenarios requiring frequent insertions/removals in the middle or beginning of a list.
+        	- ArrayList: Ideal for cases requiring fast random access and minimal modifications.
 
-        4. Insertions/Deletions (end):
-        - ArrayList: O(1) (amortized)
-        - LinkedList: O(1)
-
-        5. Memory Efficiency:
-        - ArrayList: Less memory-efficient
-        - LinkedList: More memory-efficient for frequent changes
-
-        6. Deque Operations:
-        - ArrayList: Not implemented
-        - LinkedList: Implemented (e.g., addFirst, addLast)
+        6. **Thread-Safety**:
+        	- Both are not thread-safe by default; synchronization must be handled externally for concurrent use.
         */
 
         LinkedList<Integer> linkedList = new LinkedList<>();

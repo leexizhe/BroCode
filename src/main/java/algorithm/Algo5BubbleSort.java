@@ -4,20 +4,36 @@ import java.util.Arrays;
 
 public class Algo5BubbleSort {
     /*
-    Bubble Sort is a simple comparison-based sorting algorithm. It repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
-    The pass through the list is repeated until the list is sorted.
-    Run Time Complexity: best case: 𝑂(𝑛), worst case: 𝑂(𝑛²)
-    Space Complexity: 𝑂(1) (in-place sorting).
+    Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements,
+    and swaps them if they are in the wrong order. The process continues until the list is sorted.
+    Run Time Complexity:
+    	- Best Case: 𝑂(𝑛) (when the array is already sorted)
+    	- Worst Case: 𝑂(𝑛²) (when the array is sorted in reverse order)
+    	- Average Case: 𝑂(𝑛²)
+    Space Complexity: 𝑂(1) (in-place sorting)
 
-    1. Small Data Sets: Bubble sort can be useful for small data sets where the simplicity of the algorithm outweighs its inefficiency.
+    1. **Algorithm**:
+    	- Start from the first element and iterate through the array.
+    	- Compare each pair of adjacent elements.
+    	- Swap them if they are in the wrong order.
+    	- Repeat the process for all elements, reducing the range with each pass.
 
-    2. Educational Purposes: Bubble sort is often used for educational purposes to help students understand the concept of sorting algorithms.
+    2. **Applications**:
+    	- **Educational**: Often used for teaching the basics of sorting due to its simplicity.
+    	- **Small Data Sets**: Useful for sorting small datasets where simplicity matters more than efficiency.
+    	- **Partially Sorted Data**: Works better with almost sorted data since fewer swaps are required.
 
-    3. Nearly Sorted Data: When the data is already nearly sorted, bubble sort can efficiently complete the sorting with minimal swaps.
+    3. **Advantages**:
+    	- Simple and easy to implement.
+    	- Does not require extra memory (in-place sorting).
+    	- Provides insight into basic sorting mechanisms.
 
-    4. Debugging: Bubble sort can be useful for debugging purposes to ensure that data is correctly sorted when more efficient algorithms are too complex to use.
+    4. **Limitations**:
+    	- Inefficient for large datasets due to its quadratic time complexity.
+    	- Performs poorly compared to advanced algorithms like Quick Sort, Merge Sort, or Heap Sort.
 
-    5. Limited Resources: In environments with limited computational resources where the overhead of more complex algorithms is not justified.
+    5. **Optimization**:
+    	- Improved versions of Bubble Sort stop early if no swaps are made in a pass, indicating the array is already sorted.
     */
 
     public static void main(String[] args) {

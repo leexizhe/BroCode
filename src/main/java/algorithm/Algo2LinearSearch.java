@@ -3,24 +3,33 @@ package algorithm;
 public class Algo2LinearSearch {
 
     /*
-    Linear Search is a simple search algorithm that checks each element in the list sequentially until the target element is found or the end of the list is reached.
-    It works on both sorted and unsorted lists.
-    Run Time Complexity: best case: 𝑂(1), worst case: 𝑂(𝑛)
-    Space Complexity: 𝑂(𝑛)
+    Linear Search is the simplest searching algorithm that checks every element in the list sequentially until the desired value is found or the list ends.
+    Run Time Complexity:
+    	- Best Case: 𝑂(1) (when the target element is at the beginning)
+    	- Worst/Average Case: 𝑂(𝑛)
+    Space Complexity: 𝑂(1)
 
-    1. Small Data Sets: Linear search is useful for small data sets where the overhead of more complex algorithms is not justified.
+    1. **Algorithm**:
+    	- Start at the first element in the array.
+    	- Compare each element with the target value.
+    	- If a match is found, return the index of the element.
+    	- If no match is found, return a flag value (e.g., -1) to indicate absence.
 
-    2. Unsorted Lists: When the data is unsorted, linear search is one of the simplest methods to find an element.
+    2. **Applications**:
+    	- **Small Data Sets**: Works well when dealing with small or unsorted data.
+    	- **Unordered Data**: Ideal when the dataset is not sorted, as sorting is not required for this algorithm.
+    	- **Finding Duplicates**: Useful for identifying duplicate entries in lists.
+    	- **Limited Comparisons**: Can be used if the target is expected to be near the beginning.
+    	- **Debugging**: Helps debug to check the presence of values in smaller collections.
 
-    3. Debugging: Linear search can be used for debugging purposes to ensure that data is correctly located.
+    3. **Advantages**:
+    	- Simple to implement and understand.
+    	- No pre-processing of data (e.g., sorting) is needed.
+    	- Works on all types of data structures like arrays, lists, and linked lists.
 
-    4. Searching Linked Lists: Linear search is often used in linked lists since random access is not possible in such data structures.
-
-    5. Finding Minimum/Maximum: Linear search can be used to find the minimum or maximum value in an unsorted list.
-
-    6. Arrays with Few Elements: If the array contains only a few elements, the simplicity of linear search can be advantageous.
-
-    7. First Occurrence Search: Linear search can be used to find the first occurrence of an element in a list.
+    4. **Limitations**:
+    	- Inefficient for large datasets compared to more advanced algorithms like Binary Search.
+    	- Higher time complexity for unsorted data compared to optimized methods.
     */
 
     public static void main(String[] args) {

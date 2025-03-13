@@ -2,22 +2,42 @@ package algorithm;
 
 public class Algo8Recursion {
     /*
-    Recursion is a programming concept where a function calls itself to solve smaller instances of a problem, eventually reaching a base case to stop the recursion.
-    It is widely used for problems that can be divided into similar sub-problems.
-    Time Complexity: Depends on the problem (e.g., factorial: 𝑂(𝑛), Fibonacci (naive): 𝑂(2ⁿ))
-    Space Complexity: Depends on the depth of recursion (can lead to 𝑂(𝑛) due to the call stack).
+    Recursion is a technique where a function calls itself directly or indirectly to solve a problem.
+    Each recursive call should reduce the problem to a simpler or smaller version of itself.
+    Run Time Complexity:
+    	- Depends on the problem and the depth of recursion.
+    	- Can be optimized with techniques like memoization or dynamic programming.
+    Space Complexity:
+    	- Depends on the depth of the recursion stack (𝑂(𝑛) in some cases).
 
-    1. Divide and Conquer: Recursion is effective for problems like merge sort, quicksort, or binary search, where the problem is divided into sub-problems.
+    1. **Key Components**:
+    	- **Base Case**: The condition where recursion stops (to prevent infinite recursion).
+    	- **Recursive Case**: The part where the function calls itself to break the problem into smaller sub-problems.
 
-    2. Tree and Graph Problems: It is often used for traversing trees (preorder, postorder, or inorder traversal) and graphs (DFS, backtracking).
+    2. **Applications**:
+    	- **Mathematics**: Calculating factorials, Fibonacci sequences, or powers.
+    	- **Sorting Algorithms**: Used in algorithms like Quick Sort and Merge Sort.
+    	- **Searching Algorithms**: Depth-first search in trees and graphs.
+    	- **Game Development**: For traversing game states or decision trees.
+    	- **Backtracking**: Solving puzzles like Sudoku, N-Queens, or mazes.
+    	- **Data Structures**: Operating on recursive data structures like linked lists, trees, and graphs.
 
-    3. Mathematical Problems: Recursion simplifies the implementation of problems like factorials, Fibonacci sequences, and permutations/combinations.
+    3. **Advantages**:
+    	- Elegantly solves problems that can be broken into similar sub-problems.
+    	- Simplifies the code for complex problems.
 
-    4. Elegance and Simplicity: Recursive solutions can be simpler and more elegant compared to iterative solutions for certain problems.
+    4. **Limitations**:
+    	- Inefficient for deep recursion without optimization (e.g., stack overflow).
+    	- May require additional memory for the recursion stack.
 
-    5. Memory Usage: Recursion relies on the call stack, which can lead to higher memory usage and stack overflow if not carefully managed
-    (e.g., tail recursion optimization is often needed for efficiency).
+    5. **Example**:
+    	- Factorial of a number:
+    	int factorial(int n) {
+    		if (n == 0) return 1;  // Base case
+    		return n * factorial(n - 1);  // Recursive case
+    	}
     */
+
     public static void main(String[] args) {
         walk(8);
 

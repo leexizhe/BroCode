@@ -4,21 +4,34 @@ import java.util.Arrays;
 
 public class Algo9MergeSort {
     /*
-    Merge Sort is a highly efficient, comparison-based sorting algorithm based on the divide-and-conquer paradigm.
-    It divides the input array into smaller subarrays, sorts each of them, and then merges the sorted subarrays back into one sorted array.
-    The process continues recursively until the entire array is sorted.
-    Run Time Complexity: Best, Average, and Worst Case: O(n log n) (balanced divides and merges)
-    Space Complexity: O(n) (requires temporary arrays for merging)
+    Merge Sort is a divide-and-conquer sorting algorithm that splits an array into halves, recursively sorts them, and then merges the sorted halves back together.
+    Run Time Complexity:
+    	- Best Case: 𝑂(𝑛 log 𝑛)
+    	- Worst Case: 𝑂(𝑛 log 𝑛)
+    	- Average Case: 𝑂(𝑛 log 𝑛)
+    Space Complexity: 𝑂(𝑛) (due to temporary arrays used for merging)
 
-    1. Large Data Sets: Merge Sort is particularly effective for large datasets due to its O(n log n) time complexity.
+    1. **Algorithm**:
+    	- Divide: Recursively split the array into two halves until each subarray contains a single element.
+    	- Conquer: Sort each of the smaller subarrays.
+    	- Combine: Merge the sorted subarrays to produce the sorted array.
 
-    2. External Sorting: Often used in external sorting algorithms where data cannot all fit into memory, as it divides and processes chunks.
+    2. **Applications**:
+    	- **Large Data Sets**: Efficient for sorting large datasets where stability and efficiency are critical.
+    	- **External Sorting**: Used when data is too large to fit in memory and needs to be sorted on disk.
+    	- **Linked Lists**: Performs well on linked lists as they require no shifting of elements during merging.
 
-    3. Stable Sorting: Merge Sort is stable, preserving the relative order of equal elements in the original array.
+    3. **Advantages**:
+    	- Guarantees 𝑂(𝑛 log 𝑛) performance regardless of input order.
+    	- Stable sorting algorithm (maintains the relative order of equal elements).
+    	- Works well for data that does not fit in memory (e.g., external sorting).
 
-    4. Predictable Performance: Unlike algorithms with varied time complexities based on input conditions, Merge Sort consistently performs in O(n log n).
+    4. **Limitations**:
+    	- Requires additional memory for temporary arrays, making it less efficient for in-place sorting.
+    	- For smaller datasets, other algorithms like Insertion Sort or Quick Sort can be faster.
 
-    5. Divide-and-Conquer Nature: It is a prime example of this algorithmic strategy, making it ideal for teaching and understanding the divide-and-conquer methodology.
+    5. **Key Insight**:
+    	- The merging process is the core of Merge Sort, where two sorted arrays are combined into one sorted array.
     */
 
     public static void main(String[] args) {

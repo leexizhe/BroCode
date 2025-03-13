@@ -4,21 +4,38 @@ import java.util.Arrays;
 
 public class Algo10QuickSort {
     /*
-    QuickSort is an efficient comparison-based sorting algorithm based on the divide-and-conquer paradigm.
-    It selects a pivot element and partitions the array around the pivot, placing smaller elements before it and larger elements after it.
-    The process is repeated recursively on the subarrays, leading to a fully sorted array.
-    Run Time Complexity: Best and Average Case: O(n log n), Worst Case: O(n²) (when partitions are unbalanced)
-    Space Complexity: O(log n) (due to the recursion stack)
+    QuickSort is a highly efficient, divide-and-conquer sorting algorithm that works by selecting a 'pivot' element,
+    partitioning the array around the pivot, and then sorting the partitions recursively.
+    Run Time Complexity:
+    	- Best Case: 𝑂(𝑛 log 𝑛)
+    	- Average Case: 𝑂(𝑛 log 𝑛)
+    	- Worst Case: 𝑂(𝑛²) (occurs when the pivot selection is poor, e.g., always choosing the smallest or largest element)
+    Space Complexity: 𝑂(log 𝑛) (for recursive calls in the best case)
 
-    1. Large Data Sets: QuickSort is highly efficient for large datasets because of its O(n log n) average time complexity.
+    1. **Algorithm**:
+    	- Choose a pivot element from the array.
+    	- Partition the array so that all elements less than the pivot go to the left and all elements greater go to the right.
+    	- Recursively apply the same process to the left and right partitions.
+    	- Combine the partitions to form the sorted array.
 
-    2. In-Place Sorting: It works in-place, meaning it requires minimal additional space compared to other sorting algorithms like Merge Sort.
+    2. **Applications**:
+    	- **Large Datasets**: Efficient for large data due to its average time complexity of 𝑂(𝑛 log 𝑛).
+    	- **Systems with Limited Memory**: Uses in-place sorting (low memory overhead compared to Merge Sort).
+    	- **Gaming**: Useful for sorting objects, scores, or assets.
+    	- **Databases**: Quickly organizes rows or entries in various fields.
+    	- **Networking**: Helps with sorting routing data or other large datasets efficiently.
 
-    3. Unstable Sorting: QuickSort is not stable, so the relative order of equal elements may not be preserved.
+    3. **Advantages**:
+    	- Fast for large datasets with a good pivot selection.
+    	- Works well with in-memory datasets due to its in-place sorting nature.
+    	- Flexible and adaptable for real-world applications.
 
-    4. Pivot Selection: Proper choice of the pivot is crucial for ensuring good performance. Popular strategies include picking the first, last, middle, or random element.
+    4. **Limitations**:
+    	- Can degrade to 𝑂(𝑛²) in the worst case, especially with poor pivot selection.
+    	- Not a stable sorting algorithm (equal elements' relative order may not be preserved).
 
-    5. Divide-and-Conquer Nature: QuickSort exemplifies this strategy, making it a commonly studied algorithm in computer science for understanding partitioning and recursion.
+    5. **Key Insight**:
+    	- The choice of pivot significantly affects performance. Techniques like "median of three" or random pivot selection can reduce the risk of poor performance.
     */
 
     public static void main(String[] args) {
