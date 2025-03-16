@@ -9,20 +9,20 @@ public class Data5DynamicArrays {
     - Appending Elements: Average Case 𝑂(1); Worst Case 𝑂(𝑛) (when resizing is required)
     - Inserting/Removing: 𝑂(𝑛) (as elements may need to be shifted)
 
-    1. **Dynamic Memory Management**:
+    1. Dynamic Memory Management:
     - Expands memory allocation as new elements are added.
     - Allocates extra memory in chunks to minimize frequent resizing operations.
 
-    2. **Automatic Resizing**:
+    2. Automatic Resizing:
     - When the array reaches its capacity, it creates a new larger array (often double the size), copies the existing elements, and continues.
 
-    3. **Applications**:
-    - **Flexible Data Handling**: Managing lists of unpredictable or varying sizes, such as user data in an app.
-    - **Stacks and Queues**: Used as a base for implementing stack or queue structures in programming.
-    - **Buffer Management**: Utilized in scenarios like file I/O buffers or video streaming buffers.
-    - **Game Development**: For dynamically managing game objects like enemies, projectiles, or inventory items.
+    3. Applications:
+    - Flexible Data Handling: Managing lists of unpredictable or varying sizes, such as user data in an app.
+    - Stacks and Queues: Used as a base for implementing stack or queue structures in programming.
+    - Buffer Management: Utilized in scenarios like file I/O buffers or video streaming buffers.
+    - Game Development: For dynamically managing game objects like enemies, projectiles, or inventory items.
 
-    4. **Languages**:
+    4. Languages:
     - Common in languages like Java (`ArrayList`), Python (`list`), C++ (`std::vector`), and more.
 
     Key Advantage:

@@ -9,25 +9,25 @@ public class Algo2LinearSearch {
     	- Worst/Average Case: 𝑂(𝑛)
     Space Complexity: 𝑂(1)
 
-    1. **Algorithm**:
+    1. Algorithm:
     	- Start at the first element in the array.
     	- Compare each element with the target value.
     	- If a match is found, return the index of the element.
     	- If no match is found, return a flag value (e.g., -1) to indicate absence.
 
-    2. **Applications**:
-    	- **Small Data Sets**: Works well when dealing with small or unsorted data.
-    	- **Unordered Data**: Ideal when the dataset is not sorted, as sorting is not required for this algorithm.
-    	- **Finding Duplicates**: Useful for identifying duplicate entries in lists.
-    	- **Limited Comparisons**: Can be used if the target is expected to be near the beginning.
-    	- **Debugging**: Helps debug to check the presence of values in smaller collections.
+    2. Applications:
+    	- Small Data Sets: Works well when dealing with small or unsorted data.
+    	- Unordered Data: Ideal when the dataset is not sorted, as sorting is not required for this algorithm.
+    	- Finding Duplicates: Useful for identifying duplicate entries in lists.
+    	- Limited Comparisons: Can be used if the target is expected to be near the beginning.
+    	- Debugging: Helps debug to check the presence of values in smaller collections.
 
-    3. **Advantages**:
+    3. Advantages:
     	- Simple to implement and understand.
     	- No pre-processing of data (e.g., sorting) is needed.
     	- Works on all types of data structures like arrays, lists, and linked lists.
 
-    4. **Limitations**:
+    4. Limitations:
     	- Inefficient for large datasets compared to more advanced algorithms like Binary Search.
     	- Higher time complexity for unsorted data compared to optimized methods.
     */

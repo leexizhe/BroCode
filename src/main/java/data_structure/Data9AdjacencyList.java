@@ -8,7 +8,7 @@ public class Data9AdjacencyList {
     An Adjacency List is an efficient representation of a graph as a collection of lists, where each list corresponds to a vertex.
     Each list contains the neighbors of the corresponding vertex.
 
-    1. **Key Features**:
+    1. Key Features:
     	- List Representation: The graph is represented as an array of lists.
     	- Edge Representation:
     		- For unweighted graphs, lists store only the connected vertices.
@@ -17,23 +17,23 @@ public class Data9AdjacencyList {
     		- For undirected graphs, edges are stored symmetrically (i.e., in both lists of the connected vertices).
     	- Edge Storage: Suitable for sparse graphs due to compact memory usage.
 
-    2. **Run Time Complexity**:
+    2. Run Time Complexity:
     		- Edge Lookup: O(V) in the worst case, as it requires scanning the list of neighbors.
     		- Insertion/Deletion:
     			- Adding an Edge: O(1) - Adding an element to a list.
     			- Removing an Edge: O(V) - Finding and removing the element from a list.
 
-    3. **Applications**:
+    3. Applications:
     	- BFS/DFS Algorithms: Efficiently traverses graphs using the adjacency list structure.
     	- Sparse Graph Representation: Ideal for graphs with fewer edges compared to the number of vertices.
     	- Network Analysis: Used to model networks, social connections, or transport systems efficiently.
 
-    4. **Advantages**:
+    4. Advantages:
     	- Space Efficiency: Requires O(V + E) space, much lower than an adjacency matrix for sparse graphs.
     	- Flexibility: Handles dynamic graph changes (e.g., adding/removing edges) effectively.
     	- Faster Iteration: Suitable for traversing all neighbors of a vertex.
 
-    5. **Limitations**:
+    5. Limitations:
     	- Edge Lookup Inefficiency: Requires scanning a list, which can be slow for vertices with many edges.
     	- Complexity: Slightly more complex implementation compared to an adjacency matrix.
     */

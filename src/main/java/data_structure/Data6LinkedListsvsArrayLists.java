@@ -8,11 +8,11 @@ public class Data6LinkedListsvsArrayLists {
     public static void main(String[] args) {
 
         /*
-        1. **Structure**:
+        1. Structure:
         	- LinkedList: Uses a doubly linked list structure; each node points to its previous and next node.
         	- ArrayList: Uses a dynamic array structure; elements are stored contiguously.
 
-        2. **Performance**:
+        2. Performance:
         	- Adding/Removing:
         		* LinkedList: Efficient for frequent insertions/removals at the beginning or middle (𝑂(1) when at a node, otherwise 𝑂(𝑛)).
         		* ArrayList: Inserting/removing elements at the end is efficient (𝑂(1)), but costly elsewhere (𝑂(𝑛)).
@@ -20,19 +20,19 @@ public class Data6LinkedListsvsArrayLists {
         		* LinkedList: Slow (𝑂(𝑛)) as you must traverse nodes sequentially.
         		* ArrayList: Fast (𝑂(1)) as it uses direct index-based access.
 
-        3. **Memory Usage**:
+        3. Memory Usage:
         	- LinkedList: More memory-intensive due to storage of pointers for previous/next nodes.
         	- ArrayList: Uses less memory as it doesn’t have pointers.
 
-        4. **Iteration**:
+        4. Iteration:
         	- LinkedList: Better performance for iterative operations like adding/removing elements during iteration (using ListIterator).
         	- ArrayList: Performs well with simple traversal and random access.
 
-        5. **Use Cases**:
+        5. Use Cases:
         	- LinkedList: Suitable for scenarios requiring frequent insertions/removals in the middle or beginning of a list.
         	- ArrayList: Ideal for cases requiring fast random access and minimal modifications.
 
-        6. **Thread-Safety**:
+        6. Thread-Safety:
         	- Both are not thread-safe by default; synchronization must be handled externally for concurrent use.
         */
 

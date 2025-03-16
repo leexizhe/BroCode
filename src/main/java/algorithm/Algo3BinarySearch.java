@@ -10,26 +10,26 @@ public class Algo3BinarySearch {
     - Iterative: 𝑂(1)
     - Recursive: 𝑂(log 𝑛) (due to the call stack)
 
-    1. **Algorithm**:
+    1. Algorithm:
     - Compare the target value to the middle element of the array.
     - If it matches, return the index.
     - If it's smaller, repeat the process on the left half.
     - If it's larger, repeat the process on the right half.
     - Repeat until the target is found or the interval is empty.
 
-    2. **Applications**:
-    - **Databases**: Searching for a record in a sorted database or index.
-    - **Search Engines**: Retrieving data in sorted indexes or dictionaries.
-    - **Gaming**: Quickly finding elements, like ranks or scores, in a sorted list.
-    - **Networking**: Searching for IP addresses or other sorted data tables.
-    - **Data Analysis**: Performing efficient searches in large sorted datasets.
-    - **Library Systems**: Locating books or resources in a sorted catalog.
+    2. Applications:
+    - Databases: Searching for a record in a sorted database or index.
+    - Search Engines: Retrieving data in sorted indexes or dictionaries.
+    - Gaming: Quickly finding elements, like ranks or scores, in a sorted list.
+    - Networking: Searching for IP addresses or other sorted data tables.
+    - Data Analysis: Performing efficient searches in large sorted datasets.
+    - Library Systems: Locating books or resources in a sorted catalog.
 
-    3. **Advantages**:
+    3. Advantages:
     - Significantly faster than Linear Search for large datasets (𝑂(𝑛)).
     - Very low memory footprint in its iterative implementation.
 
-    4. **Limitations**:
+    4. Limitations:
     - Requires the array to be sorted before searching.
     - Not suitable for dynamically updated datasets unless re-sorted frequently.
     */

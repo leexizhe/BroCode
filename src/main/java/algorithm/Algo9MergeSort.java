@@ -11,26 +11,26 @@ public class Algo9MergeSort {
     	- Average Case: 𝑂(𝑛 log 𝑛)
     Space Complexity: 𝑂(𝑛) (due to temporary arrays used for merging)
 
-    1. **Algorithm**:
+    1. Algorithm:
     	- Divide: Recursively split the array into two halves until each subarray contains a single element.
     	- Conquer: Sort each of the smaller subarrays.
     	- Combine: Merge the sorted subarrays to produce the sorted array.
 
-    2. **Applications**:
-    	- **Large Data Sets**: Efficient for sorting large datasets where stability and efficiency are critical.
-    	- **External Sorting**: Used when data is too large to fit in memory and needs to be sorted on disk.
-    	- **Linked Lists**: Performs well on linked lists as they require no shifting of elements during merging.
+    2. Applications:
+    	- Large Data Sets: Efficient for sorting large datasets where stability and efficiency are critical.
+    	- External Sorting: Used when data is too large to fit in memory and needs to be sorted on disk.
+    	- Linked Lists: Performs well on linked lists as they require no shifting of elements during merging.
 
-    3. **Advantages**:
+    3. Advantages:
     	- Guarantees 𝑂(𝑛 log 𝑛) performance regardless of input order.
     	- Stable sorting algorithm (maintains the relative order of equal elements).
     	- Works well for data that does not fit in memory (e.g., external sorting).
 
-    4. **Limitations**:
+    4. Limitations:
     	- Requires additional memory for temporary arrays, making it less efficient for in-place sorting.
     	- For smaller datasets, other algorithms like Insertion Sort or Quick Sort can be faster.
 
-    5. **Key Insight**:
+    5. Key Insight:
     	- The merging process is the core of Merge Sort, where two sorted arrays are combined into one sorted array.
     */
 

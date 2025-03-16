@@ -12,27 +12,27 @@ public class Algo5BubbleSort {
     	- Average Case: 𝑂(𝑛²)
     Space Complexity: 𝑂(1) (in-place sorting)
 
-    1. **Algorithm**:
+    1. Algorithm:
     	- Start from the first element and iterate through the array.
     	- Compare each pair of adjacent elements.
     	- Swap them if they are in the wrong order.
     	- Repeat the process for all elements, reducing the range with each pass.
 
-    2. **Applications**:
-    	- **Educational**: Often used for teaching the basics of sorting due to its simplicity.
-    	- **Small Data Sets**: Useful for sorting small datasets where simplicity matters more than efficiency.
-    	- **Partially Sorted Data**: Works better with almost sorted data since fewer swaps are required.
+    2. Applications:
+    	- Educational: Often used for teaching the basics of sorting due to its simplicity.
+    	- Small Data Sets: Useful for sorting small datasets where simplicity matters more than efficiency.
+    	- Partially Sorted Data: Works better with almost sorted data since fewer swaps are required.
 
-    3. **Advantages**:
+    3. Advantages:
     	- Simple and easy to implement.
     	- Does not require extra memory (in-place sorting).
     	- Provides insight into basic sorting mechanisms.
 
-    4. **Limitations**:
+    4. Limitations:
     	- Inefficient for large datasets due to its quadratic time complexity.
     	- Performs poorly compared to advanced algorithms like Quick Sort, Merge Sort, or Heap Sort.
 
-    5. **Optimization**:
+    5. Optimization:
     	- Improved versions of Bubble Sort stop early if no swaps are made in a pass, indicating the array is already sorted.
     */
 

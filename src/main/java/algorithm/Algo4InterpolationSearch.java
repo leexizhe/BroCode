@@ -9,7 +9,7 @@ public class Algo4InterpolationSearch {
     	- Worst Case: 𝑂(𝑛) (when values are not uniformly distributed)
     Space Complexity: 𝑂(1)
 
-    1. **Algorithm**:
+    1. Algorithm:
     	- Calculate the estimated position using:
     	position = low + ((target - array[low]) * (high - low)) / (array[high] - array[low])
     	- Compare the estimated position's value with the target:
@@ -18,19 +18,19 @@ public class Algo4InterpolationSearch {
     	* If it’s larger, repeat on the left portion.
     	- Continue until the target is found or the search space is empty.
 
-    2. **Applications**:
-    	- **Databases**: Efficient searching in sorted databases with uniform distribution, such as finding records by ID.
-    	- **Financial Analysis**: Searching for specific values in uniformly distributed financial datasets.
-    	- **Networking**: Managing routing tables sorted by IP addresses or weights, especially when entries are uniformly distributed.
-    	- **Gaming**: Quickly locating player scores or leaderboard rankings in a sorted dataset with predictable distributions.
-    	- **Inventory Systems**: Searching for items in sorted inventories where item attributes are evenly spaced.
-    	- **Scientific Analysis**: Finding specific measurements or readings in uniformly distributed datasets, like sensor data.
+    2. Applications:
+    	- Databases: Efficient searching in sorted databases with uniform distribution, such as finding records by ID.
+    	- Financial Analysis: Searching for specific values in uniformly distributed financial datasets.
+    	- Networking: Managing routing tables sorted by IP addresses or weights, especially when entries are uniformly distributed.
+    	- Gaming: Quickly locating player scores or leaderboard rankings in a sorted dataset with predictable distributions.
+    	- Inventory Systems: Searching for items in sorted inventories where item attributes are evenly spaced.
+    	- Scientific Analysis: Finding specific measurements or readings in uniformly distributed datasets, like sensor data.
 
-    3. **Advantages**:
+    3. Advantages:
     	- Outperforms Binary Search for uniformly distributed data due to its adaptive estimation.
     	- Requires no additional memory.
 
-    4. **Limitations**:
+    4. Limitations:
     	- Performs poorly if the data is not uniformly distributed.
     	- Prone to division by zero errors when array[low] equals array[high].
     	- Works only on sorted data.

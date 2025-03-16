@@ -10,24 +10,24 @@ public class Algo7InsertionSort {
     	- Worst/Average Case: 𝑂(𝑛²)
     Space Complexity: 𝑂(1) (in-place sorting)
 
-    1. **Algorithm**:
+    1. Algorithm:
     	- Start with the second element (first element is considered sorted).
     	- Compare it with the previous elements.
     	- Shift all larger elements one position to the right.
     	- Insert the current element into its correct position.
     	- Repeat for all elements.
 
-    2. **Applications**:
-    	- **Small Data Sets**: Works efficiently for small or nearly sorted datasets.
-    	- **Online Sorting**: Ideal for scenarios where new elements are continuously added and need to be sorted in real-time.
-    	- **Educational Use**: Commonly used for teaching sorting concepts due to its simplicity.
+    2. Applications:
+    	- Small Data Sets: Works efficiently for small or nearly sorted datasets.
+    	- Online Sorting: Ideal for scenarios where new elements are continuously added and need to be sorted in real-time.
+    	- Educational Use: Commonly used for teaching sorting concepts due to its simplicity.
 
-    3. **Advantages**:
+    3. Advantages:
     	- Simple and easy to implement.
     	- Efficient for small or partially sorted arrays.
     	- In-place sorting algorithm with no additional memory requirement.
 
-    4. **Limitations**:
+    4. Limitations:
     	- Inefficient for large datasets due to its quadratic time complexity.
     	- Requires more shifts compared to other sorting algorithms for larger arrays.
     */

@@ -13,28 +13,28 @@ public class Algo6SelectionSort {
     	- Average Case: 𝑂(𝑛²)
     Space Complexity: 𝑂(1) (in-place sorting)
 
-    1. **Algorithm**:
+    1. Algorithm:
     	- Divide the array into a sorted and an unsorted region.
     	- Find the smallest element in the unsorted region.
     	- Swap it with the first element of the unsorted region.
     	- Expand the sorted region by one and repeat until the array is sorted.
 
-    2. **Applications**:
-    	- **Small Data Sets**: Useful when working with small datasets due to its simplicity.
-    	- **Learning Algorithms**: Frequently used in educational environments to teach sorting concepts.
-    	- **Embedded Systems**: Used in systems with strict memory constraints where in-place sorting is required.
-    	- **Partially Ordered Data**: Handy when only a few swaps are needed due to pre-sorted elements.
+    2. Applications:
+    	- Small Data Sets: Useful when working with small datasets due to its simplicity.
+    	- Learning Algorithms: Frequently used in educational environments to teach sorting concepts.
+    	- Embedded Systems: Used in systems with strict memory constraints where in-place sorting is required.
+    	- Partially Ordered Data: Handy when only a few swaps are needed due to pre-sorted elements.
 
-    3. **Advantages**:
+    3. Advantages:
     	- Simple to understand and implement.
     	- Does not require extra memory (in-place sorting).
     	- Performs well on small arrays or nearly sorted data.
 
-    4. **Limitations**:
+    4. Limitations:
     	- Inefficient on large datasets due to its quadratic time complexity.
     	- Always makes 𝑛-1 swaps, even if the array is already sorted.
 
-    5. **Key Insight**:
+    5. Key Insight:
     	- Selection Sort minimizes the number of swaps but performs the same number of comparisons regardless of the input's order.
     */
 

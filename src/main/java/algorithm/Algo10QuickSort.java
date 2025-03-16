@@ -12,29 +12,29 @@ public class Algo10QuickSort {
     	- Worst Case: 𝑂(𝑛²) (occurs when the pivot selection is poor, e.g., always choosing the smallest or largest element)
     Space Complexity: 𝑂(log 𝑛) (for recursive calls in the best case)
 
-    1. **Algorithm**:
+    1. Algorithm:
     	- Choose a pivot element from the array.
     	- Partition the array so that all elements less than the pivot go to the left and all elements greater go to the right.
     	- Recursively apply the same process to the left and right partitions.
     	- Combine the partitions to form the sorted array.
 
-    2. **Applications**:
-    	- **Large Datasets**: Efficient for large data due to its average time complexity of 𝑂(𝑛 log 𝑛).
-    	- **Systems with Limited Memory**: Uses in-place sorting (low memory overhead compared to Merge Sort).
-    	- **Gaming**: Useful for sorting objects, scores, or assets.
-    	- **Databases**: Quickly organizes rows or entries in various fields.
-    	- **Networking**: Helps with sorting routing data or other large datasets efficiently.
+    2. Applications:
+    	- Large Datasets: Efficient for large data due to its average time complexity of 𝑂(𝑛 log 𝑛).
+    	- Systems with Limited Memory: Uses in-place sorting (low memory overhead compared to Merge Sort).
+    	- Gaming: Useful for sorting objects, scores, or assets.
+    	- Databases: Quickly organizes rows or entries in various fields.
+    	- Networking: Helps with sorting routing data or other large datasets efficiently.
 
-    3. **Advantages**:
+    3. Advantages:
     	- Fast for large datasets with a good pivot selection.
     	- Works well with in-memory datasets due to its in-place sorting nature.
     	- Flexible and adaptable for real-world applications.
 
-    4. **Limitations**:
+    4. Limitations:
     	- Can degrade to 𝑂(𝑛²) in the worst case, especially with poor pivot selection.
     	- Not a stable sorting algorithm (equal elements' relative order may not be preserved).
 
-    5. **Key Insight**:
+    5. Key Insight:
     	- The choice of pivot significantly affects performance. Techniques like "median of three" or random pivot selection can reduce the risk of poor performance.
     */
 

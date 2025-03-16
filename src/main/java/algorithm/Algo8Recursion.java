@@ -10,27 +10,27 @@ public class Algo8Recursion {
     Space Complexity:
     	- Depends on the depth of the recursion stack (𝑂(𝑛) in some cases).
 
-    1. **Key Components**:
-    	- **Base Case**: The condition where recursion stops (to prevent infinite recursion).
-    	- **Recursive Case**: The part where the function calls itself to break the problem into smaller sub-problems.
+    1. Key Components:
+    	- Base Case: The condition where recursion stops (to prevent infinite recursion).
+    	- Recursive Case: The part where the function calls itself to break the problem into smaller sub-problems.
 
-    2. **Applications**:
-    	- **Mathematics**: Calculating factorials, Fibonacci sequences, or powers.
-    	- **Sorting Algorithms**: Used in algorithms like Quick Sort and Merge Sort.
-    	- **Searching Algorithms**: Depth-first search in trees and graphs.
-    	- **Game Development**: For traversing game states or decision trees.
-    	- **Backtracking**: Solving puzzles like Sudoku, N-Queens, or mazes.
-    	- **Data Structures**: Operating on recursive data structures like linked lists, trees, and graphs.
+    2. Applications:
+    	- Mathematics: Calculating factorials, Fibonacci sequences, or powers.
+    	- Sorting Algorithms: Used in algorithms like Quick Sort and Merge Sort.
+    	- Searching Algorithms: Depth-first search in trees and graphs.
+    	- Game Development: For traversing game states or decision trees.
+    	- Backtracking: Solving puzzles like Sudoku, N-Queens, or mazes.
+    	- Data Structures: Operating on recursive data structures like linked lists, trees, and graphs.
 
-    3. **Advantages**:
+    3. Advantages:
     	- Elegantly solves problems that can be broken into similar sub-problems.
     	- Simplifies the code for complex problems.
 
-    4. **Limitations**:
+    4. Limitations:
     	- Inefficient for deep recursion without optimization (e.g., stack overflow).
     	- May require additional memory for the recursion stack.
 
-    5. **Example**:
+    5. Example:
     	- Factorial of a number:
     	int factorial(int n) {
     		if (n == 0) return 1;  // Base case
