@@ -1,8 +1,5 @@
 package algorithm;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Algo11DepthFirstSearch {
     /*
     Depth First Search (DFS) is a graph traversal algorithm that explores as far as possible along each branch before backtracking.
@@ -36,60 +33,56 @@ public class Algo11DepthFirstSearch {
         Algo11DepthFirstSearch graph = new Algo11DepthFirstSearch(5);
 
         graph.addEdge(0, 1);
-        graph.addEdge(0, 4);
         graph.addEdge(1, 2);
-        graph.addEdge(1, 3);
-        graph.addEdge(4, 3);
+        graph.addEdge(1, 4);
+        graph.addEdge(2, 3);
+        graph.addEdge(2, 4);
+        graph.addEdge(4, 0);
+        graph.addEdge(4, 2);
 
         graph.display();
 
         System.out.println("DFS Traversal starting from vertex 0:");
-//        graph.depthFirstSearch(0);
-//        graph.depthFirstSearch(1);
         graph.depthFirstSearch(1);
-//        graph.depthFirstSearch(3);
-//        graph.depthFirstSearch(4);
     }
 
-    private List<List<Integer>> adjacencyList; // Adjacency list representation of the graph
-    private boolean[] visited; // Array to track visited vertices
+    private int[][] matrix;
 
-    // Constructor to initialize graph with given vertices
-    public Algo11DepthFirstSearch(int vertices) {
-        adjacencyList = new ArrayList<>();
-        visited = new boolean[vertices];
-        for (int i = 0; i < vertices; i++) {
-            adjacencyList.add(new ArrayList<>());
-        }
+    public Algo11DepthFirstSearch(int size) {
+        matrix = new int[size][size];
     }
 
-    // Add an edge from source to destination (directed graph)
     public void addEdge(int source, int destination) {
-        adjacencyList.get(source).add(destination);
-        // Uncomment for undirected graph:
-        // adjacencyList.get(destination).add(source);
+        matrix[source][destination] = 1;
     }
 
-    // Display the graph as an adjacency list
     public void display() {
         System.out.println("Graph Adjacency List:");
-        for (int i = 0; i < adjacencyList.size(); i++) {
-            System.out.print("Vertex " + i + " -> ");
-            for (int neighbor : adjacencyList.get(i)) {
-                System.out.print(neighbor + " -> ");
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
     }
 
-    // Perform Depth First Search starting from a given vertex
-    public void depthFirstSearch(int vertex) {
-        visited[vertex] = true;
-        System.out.print(vertex + " -> ");
+    public void depthFirstSearch(int src) {
+        boolean[] visited = new boolean[matrix.length];
+        dFSHelper(src, visited);
+    }
 
-        for (int neighbor : adjacencyList.get(vertex)) {
-            if (!visited[neighbor]) {
-                depthFirstSearch(neighbor);
+    private void dFSHelper(int src, boolean[] visited) {
+
+        if (visited[src]) {
+            return;
+        } else {
+            visited[src] = true;
+            System.out.println(src + " = visited");
+        }
+
+        for (int i = 0; i < matrix[src].length; i++) {
+            if (matrix[src][i] == 1) {
+                dFSHelper(i, visited);
             }
         }
     }
