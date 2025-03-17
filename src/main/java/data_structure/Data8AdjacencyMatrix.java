@@ -1,6 +1,6 @@
 package data_structure;
 
-public class Date8AdjacencyMatrix {
+public class Data8AdjacencyMatrix {
     /*
     An Adjacency Matrix is a 2D array representation of a graph, where rows and columns correspond to graph vertices.
     Each entry in the matrix indicates the presence or weight of an edge.
@@ -38,7 +38,7 @@ public class Date8AdjacencyMatrix {
     */
 
     public static void main(String[] args) {
-        Date8AdjacencyMatrix graph = new Date8AdjacencyMatrix(5);
+        Data8AdjacencyMatrix graph = new Data8AdjacencyMatrix(5);
 
         graph.addEdge(0, 1);
         graph.addEdge(1, 2);
@@ -55,7 +55,7 @@ public class Date8AdjacencyMatrix {
     private int vertices; // Number of vertices in the graph
 
     // Constructor to initialize the matrix
-    public Date8AdjacencyMatrix(int vertices) {
+    public Data8AdjacencyMatrix(int vertices) {
         this.vertices = vertices;
         matrix = new int[vertices][vertices];
     }
